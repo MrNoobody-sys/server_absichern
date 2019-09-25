@@ -14,7 +14,8 @@ echo "SSH Root Login wird geschlossen. Welcher Benutzer soll neu angelegt werden
   read newuser
   sudo adduser $newuser
   sudo usermod -aG sudo $newuser
-echo "Suchen Sie nun PermitRootLogin und ändern Sie dieses auf PermitRootLogin no" response
+echo "Suchen Sie nun PermitRootLogin yes und ändern Sie dieses auf PermitRootLogin no" response
   sudo nano /etc/ssh/sshd_config
+  sudo reboot now
 
 fi
