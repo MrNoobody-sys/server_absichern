@@ -16,7 +16,7 @@ echo "Suchen Sie nun PermitRootLogin yes und ändern Sie dieses auf PermitRootLo
     sudo nano /etc/ssh/sshd_config
     
 # Google Authenticator installieren
-  sudo apt install libpam-google-authenticator
+  sudo apt install libpam-google-authenticator -y
 
 # Google Authenticator starten
   google-authenticator
