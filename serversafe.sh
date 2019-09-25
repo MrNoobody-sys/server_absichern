@@ -22,6 +22,9 @@ echo "Suchen Sie nun PermitRootLogin yes und ändern Sie dieses auf PermitRootLo
     google-authenticator
 echo "Suchen Sie \"@include common-password\" und schreiben Sie da drunter \"auth required pam_google_authenticator.so\". (Bitte lesen Sie die Anleitung auf github) Weitere mit Enter..."
     read
+    sudo nano /etc/pam.d/sshd
 echo "Suchen Sie nun \"ChallangeResponseAuthentication\" und setzen Sie den Wert auf \"yes\". (Bitte lesen Sie die Anleitung auf github) Weitere mit Enter..."
     read
+    sudo nano /etc/ssh/sshd_config
+    sudo reboot now
 fi
