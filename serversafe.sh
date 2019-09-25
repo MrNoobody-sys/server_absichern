@@ -26,5 +26,7 @@ echo "Suchen Sie \"@include common-password\" und schreiben Sie da drunter \"aut
 echo "Suchen Sie nun \"ChallangeResponseAuthentication\" und setzen Sie den Wert auf \"yes\". (Bitte lesen Sie die Anleitung auf github) Weitere mit Enter..."
     read
     sudo nano /etc/ssh/sshd_config
+echo "Ein Reboot wird durchgeführt"
+        sleep 2
     sudo reboot now
 fi
