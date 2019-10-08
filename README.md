@@ -9,7 +9,7 @@
 ## Install
 1. git clone https://github.com/Nazaled/server_absichern.git
 2. cd server_absichern
-4. sudo bash ./serversafe.sh
+4. bash ./serversafe.sh
 
 ### Apticron
 1. Bitte tragen Sie unter "EMAIL=root" ihre E-Mail Adresse ein
@@ -20,7 +20,7 @@
 ### Google Authenticator
 1. Bitte beantworten Sie die Fragen wie folgt:
 
-Do you want authentication tokens to be time-based (y/n) y
+Do you want authentication tokens to be time-based (y/n) n
 
 Do you want me to update your "~/.google_authenticator" file (y/n) y
 
