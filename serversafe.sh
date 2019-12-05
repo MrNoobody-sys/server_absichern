@@ -14,7 +14,10 @@ clear
 echo "Suchen Sie nun PermitRootLogin yes und ändern Sie dieses auf PermitRootLogin no. Weitere mit Enter..."
     read
     sudo nano /etc/ssh/sshd_config
-    
+clear
+echo "SSH Port in 60200 ändern. Weiter mit Enter..."
+    sudo nano /etc/ssh/sshd_config
+    sudo systemctl restart sshd.service
 # Google Authenticator installieren
     sudo apt install libpam-google-authenticator -y
 
