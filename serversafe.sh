@@ -19,7 +19,7 @@ clear
 echo "Installation von s-nail um E-Mails bei SSH Logins zu versenden. Weiter mit Enter..."
     read
     sudo apt install s-nail -y
-    sudo printf "#!/bin/bash\n echo \"Login auf $(hostname) am $(date +%Y-%m-%d) um $(date +%H:%M)\"\n echo \"Benutzer: $USER\"\ echo\npinky>/opt/shell-login.sh
+    sudo printf "#!/bin/bash echo \"Login auf $(hostname) am $(date +%Y-%m-%d) um $(date +%H:%M)\" echo \"Benutzer: $USER\"\ echo pinky>/opt/shell-login.sh
 echo \"Damit die Mails beim Login versendet werden, muss in der Datei /etc/profile folgende Zeile angefügt werden:
 /opt/shell-login.sh | mailx -s \"SSH Login auf IHR-HOSTNAME\" ihre-emailadresse@example.com Weiter mit Enter..."
     read
