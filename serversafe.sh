@@ -15,6 +15,7 @@ echo "Suchen Sie nun PermitRootLogin yes und ändern Sie dieses auf PermitRootLo
     read
     sudo nano /etc/ssh/sshd_config
 clear
+# s-nail installieren, bei jedem SSH Login wird eine E-Mail versendet
 echo "Installation von s-nail um E-Mails bei SSH Logins zu versenden. Weiter mit Enter..."
     read
     sudo apt install s-nail -y
@@ -25,6 +26,7 @@ echo "Damit die Mails beim Login versendet werden, muss in der Datei /etc/profil
     sudo nano /etc/profile
     sudo chmod 755 /opt/shell-login.sh
     clear
+# SSH Port ändern
 echo "SSH Port in 60200 ändern. Weiter mit Enter..."
     sudo nano /etc/ssh/sshd_config
     sudo systemctl restart sshd.service
