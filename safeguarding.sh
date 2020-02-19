@@ -61,7 +61,7 @@ if [[ "$secure" = "y" || "$secure" = "Y" ]]; then
 	echo 
 	echo -e "\t\033[1;33m SSH \033[0m"
 	echo
-	echo -e "\t The ssh port is changed."
+	echo -e "\t The ssh port is changed to 60200."
 	echo -e "\t\033[1;32m # \033[0m Press enter to continue \c"
 	read
 	sudo sed -i "s/#Port 22/Port 60200/" /etc/ssh/sshd_config
