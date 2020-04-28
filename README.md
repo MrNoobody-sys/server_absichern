@@ -14,4 +14,4 @@
 ## Install without Google Authenticator
 1. git clone https://github.com/MrNoobody-sys/server_absichern.git
 2. cd server_absichern
-4. bash ./safeguarding.sh
+4. bash ./without_google_auth.sh
