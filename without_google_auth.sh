@@ -51,6 +51,21 @@ if [[ "$secure" = "y" || "$secure" = "Y" ]]; then
 	echo -e "\t Email : \c"
 	read EMAIL
 	sudo sed -i "/^EMAIL=/s/=.*/=$EMAIL/" /etc/apticron/apticron.conf       
+	
+	# # # Monit Monitoring # # #
+	
+	clear
+	echo
+	echo -e "\t\033[1;34m SAFEGUARD \033[0m"
+	echo -e "\t\033[1;34m ========= \033[0m"
+	echo
+	echo -e "\t\033[1;33m Monit Monitoring \033[0m"
+	echo
+	echo -e "\t The server installs monit now! "
+	echo -e "\t\033[1;32m # \033[0m Press enter to continue \c"
+	read
+	sudo apt install monit -y
+	
 
 	# # # SSH # # #
 
